@@ -2,12 +2,7 @@
 A simple command-line tool that converts a dollar amount into the minimum number of U.S. coins (quarters, dimes, nickels, pennies). It reads a value from standard input, validates it (≤ 100 and non-negative), then prints how many of each coin you need. 
 
 ## Description
-This coin dispenser program takes a monetary amount as input and breaks it down into the fewest possible coins using the standard US coin denominations:
-
-- Quarters (25¢)
--  Dimes (10¢)
-- Nickels (5¢)
-- Pennies (1¢)
+A simple command-line tool that converts a dollar amount into the minimum number of U.S. coins needed using quarters, dimes, nickels, and pennies.
 
 The program uses a greedy algorithm approach, starting with the largest denomination and working down to ensure the minimum number of coins is used.
 
@@ -33,6 +28,15 @@ The program uses a greedy algorithm to solve the coin change problem:
 
 This approach works optimally for U.S. currency because the denominations have a special property where the greedy choice always leads to the minimum number of coins.
 
+## Technical Details
+**Coin Denominations:**
+- Quarters: 25¢
+- Dimes: 10¢
+- Nickels: 5¢
+- Pennies: 1¢
+
+**Time Complexity:** O(1) – Fixed number of coin denominations  
+**Space Complexity:** O(1) – Constant space usage
 
 ## Contributing
 Contributions are welcome! Feel free to:
